@@ -36,6 +36,7 @@ defmodule Crutches.Enum do
   defdelegate without(map, keys), to: Map, as: :drop
 
   @doc ~S"""
+  Returns true if `collection` contains more than 1 element.
   Shorthand for length(collection) > 1
 
   ## Examples
